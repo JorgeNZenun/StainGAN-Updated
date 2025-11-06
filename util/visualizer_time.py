@@ -4,7 +4,7 @@ import ntpath
 import time
 from . import util
 from . import html
-from scipy.misc import imresize
+from PIL import Image
 
 
 class Visualizer():
@@ -138,7 +138,7 @@ class Visualizer():
         links = []
 
         for label, im in visuals.items():
-            if label is 'fake_B':
+            if label == 'fake_B':
 
                 # image_name = '%s_%s.png' % (name, label)
                 image_name = '%s.png' % (name)
