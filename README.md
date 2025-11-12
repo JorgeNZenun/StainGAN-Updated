@@ -22,6 +22,39 @@ Patches can be found here: https://campowncloud.in.tum.de/index.php/s/iGgQ9vdHiM
 
 **Any use of the dataset or anypart of the code should be cited**
 
+## Preparation
+
+In order to prepare to train StainGAN you need to have two folders named exactly trainA and trainB containing the datasets, and have the directory file path.
+
+## Training
+
+In order to train StainGAN clone this repository in you machine and change to the new directory:
+```
+git clone https://github.com/JorgeNZenun/StainGAN-Updated/tree/master
+cd StainGAN-Updated
+```
+
+Then open a terminal and create a python virtual environment, followed by installing requirements:
+```
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+In you current terminal run:
+```
+visdom
+```
+
+Then open a new terminal in the StainGAN directory, enter in your virtual enviroment and train StainGAN, using the parament --dataroot to point to your training datasets folders, obtained in preparation step.
+```
+python train.py --dataroot /path/to/training/dataset
+```
+ 
+You can also use other parameters, if you want to. In order to see which paramenters are available run:
+```
+python train.py -h
+```
 
 ## Citation
 If you use this code for your research, please cite our papers.
