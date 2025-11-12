@@ -30,7 +30,7 @@ In order to prepare to train StainGAN you need to have two folders named exactly
 
 In order to train StainGAN clone this repository in you machine and change to the new directory:
 ```
-git clone https://github.com/JorgeNZenun/StainGAN-Updated/tree/master
+git clone https://github.com/JorgeNZenun/StainGAN-Updated
 cd StainGAN-Updated
 ```
 
